@@ -1,9 +1,14 @@
-import React from "react"
-import { Button } from "@/components/ui/button"
-import { Edit, Info, Trash, Clock } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import moment from "moment"
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Edit, Info, Trash, Clock } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import moment from "moment";
 import { IItem } from "@/interface/items";
 
 interface CustomItemRendererProps {
@@ -12,7 +17,7 @@ interface CustomItemRendererProps {
   getItemProps: (props: any) => any;
 }
 
-const CustomItemRenderer: React.FC<CustomItemRendererProps> = ({
+const UpdateItemModal: React.FC<CustomItemRendererProps> = ({
   item,
   itemContext,
   getItemProps,
@@ -171,4 +176,4 @@ const CustomItemRenderer: React.FC<CustomItemRendererProps> = ({
   );
 };
 
-export default CustomItemRenderer
+export default UpdateItemModal;
